@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#31a88d</color>
+    <color name="colorPrimaryDark">#31a88d</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="themeColor">#00bbee</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="whitetransparent">#c5ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blacktransparent">#7f000000</color>
+
+    <color name="transparentWhite1">#ddffffff</color>
+    <color name="transparentWhite2">#90ffffff</color>
+    <color name="transparentWhite3">#44ffffff</color>
+
+    <color name="transparentBlack1">#dd000000</color>
+    <color name="transparentBlack2">#90000000</color>
+    <color name="transparentBlack3">#44000000</color>
+    <color name="transparentBlack4">#11000000</color>
+
+    <color name="pressedColor">#cc11ade1</color>
+
+    <color name="transparentTheme1">#90aaccdd</color>
+    <color name="start_gradient1">#00bbee</color>
+    <color name="end_gradient1">#0099dd</color>
+    <color name="blackLine">#90bbbbbb</color>
+    <color name="blackLine2">#90dddddd</color>
+    <color name="green1">#33aa88</color>
+    <color name="red1">#dddd3333</color>
+    <color name="transparentWhite4">#f8f8f8</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="white3">#f1f1f1</color>
+    <color name="transparentWhite5">#66ffffff</color>
+    <color name="transparentWhite6">#a1ffffff</color>
+    <color name="transparentWhite7">#ffffff</color>
+
+</resources>

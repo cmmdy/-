@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.drop.ttb">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="true" />
+
+    <application
+        android:name="com.jess.arms.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+       autolayout meta
+       将设计图的宽高配置后,配合AutoLauout控件使用,在设计图尺寸以外的其它尺寸手机上,也能达到和设计图一样的效果
+        -->
+        <meta-data
+            android:name="design_width"
+            android:value="1080" />
+        <meta-data
+            android:name="design_height"
+            android:value="1920" />
+        <!-- glide配置 -->
+        <meta-data
+            android:name="com.jess.arms.widget.imageloader.glide.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <!-- arms配置 -->
+        <meta-data
+            android:name="com.drop.ttb.app.GlobalConfiguration"
+            android:value="ConfigModule" />
+
+        <!-- AMap配置 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="fa0d20f7acb26ba18065e3524427afe4" />
+
+        <service android:name="com.algebra.sdk.Controller" />
+
+        <activity android:name=".mvp.ui.activity.MainActivity" />
+        <activity android:name=".mvp.ui.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".mvp.ui.activity.RegisterActivity" />
+        <activity android:name=".mvp.ui.activity.PasswordActivity" />
+        <activity android:name=".mvp.ui.activity.TalkActivity" />
+        <activity android:name=".mvp.ui.activity.CreatChannelActivity" />
+        <activity android:name=".mvp.ui.activity.FocusChannelActivity" />
+        <activity android:name=".mvp.ui.activity.ChannelManageActivity" />
+        <activity android:name=".mvp.ui.activity.SetNameActivity" />
+        <activity android:name=".mvp.ui.activity.MapActivity" />
+        <activity android:name=".mvp.ui.activity.ChannelNoticeActivity" />
+        <activity android:name=".mvp.ui.activity.AddChannelNoticeActivity" />
+        <activity android:name=".mvp.ui.activity.ChannelNoticeDetailsActivity" />
+        <activity android:name=".mvp.ui.activity.DynamicActivity" />
+        <activity android:name=".mvp.ui.activity.AddNewChannelNoticeActivity" />
+        <activity android:name=".mvp.ui.activity.AddNewDynamicActivity" />
+        <activity android:name=".mvp.ui.activity.TipsDetailsActivity" />
+        <activity android:name=".mvp.ui.activity.SelectActivity" />
+        <activity android:name=".mvp.ui.activity.AddNewMessageActivity" />
+        <activity android:name=".mvp.ui.activity.MyMessageActivity" />
+        <activity android:name=".mvp.ui.activity.PersonActivity"></activity>
+    </application>
+
+</manifest>

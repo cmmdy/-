@@ -1,0 +1,93 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .gitignore
+* .idea\
+* .idea\.name
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\profiles_settings.xml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\scope_settings.xml
+* .idea\uiDesigner.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* QzoneComment.iml
+* README.md
+* ant.properties
+* build.xml
+* out\
+* out\production\
+* out\production\QzoneComment\
+* out\production\QzoneComment\QzoneComment.apk
+* out\production\QzoneComment\QzoneComment.unaligned.apk
+* out\production\QzoneComment\com\
+* out\production\QzoneComment\com\example\
+* out\production\QzoneComment\com\example\QzoneComment\
+* out\production\QzoneComment\com\example\QzoneComment\BuildConfig.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun$1.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun$2.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun$3.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun$4.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun$CommentDialogListener.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun$InputCommentListener.class
+* out\production\QzoneComment\com\example\QzoneComment\CommentFun.class
+* out\production\QzoneComment\com\example\QzoneComment\CustomTagHandler$1.class
+* out\production\QzoneComment\com\example\QzoneComment\CustomTagHandler$2.class
+* out\production\QzoneComment\com\example\QzoneComment\CustomTagHandler$3.class
+* out\production\QzoneComment\com\example\QzoneComment\CustomTagHandler$BaseClickableSpan.class
+* out\production\QzoneComment\com\example\QzoneComment\CustomTagHandler$OnCommentClickListener.class
+* out\production\QzoneComment\com\example\QzoneComment\CustomTagHandler.class
+* out\production\QzoneComment\com\example\QzoneComment\MainActivity$1.class
+* out\production\QzoneComment\com\example\QzoneComment\MainActivity$2.class
+* out\production\QzoneComment\com\example\QzoneComment\MainActivity$3.class
+* out\production\QzoneComment\com\example\QzoneComment\MainActivity.class
+* out\production\QzoneComment\com\example\QzoneComment\MomentAdapter$1.class
+* out\production\QzoneComment\com\example\QzoneComment\MomentAdapter$ViewHolder.class
+* out\production\QzoneComment\com\example\QzoneComment\MomentAdapter.class
+* out\production\QzoneComment\com\example\QzoneComment\R$attr.class
+* out\production\QzoneComment\com\example\QzoneComment\R$color.class
+* out\production\QzoneComment\com\example\QzoneComment\R$drawable.class
+* out\production\QzoneComment\com\example\QzoneComment\R$id.class
+* out\production\QzoneComment\com\example\QzoneComment\R$layout.class
+* out\production\QzoneComment\com\example\QzoneComment\R$string.class
+* out\production\QzoneComment\com\example\QzoneComment\R$style.class
+* out\production\QzoneComment\com\example\QzoneComment\R.class
+* out\production\QzoneComment\com\example\QzoneComment\model\
+* out\production\QzoneComment\com\example\QzoneComment\model\Comment.class
+* out\production\QzoneComment\com\example\QzoneComment\model\Moment.class
+* out\production\QzoneComment\com\example\QzoneComment\model\User.class
+* proguard-project.txt
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => qZoneCommentmaster\src\main\AndroidManifest.xml
+* res\ => qZoneCommentmaster\src\main\res\
+* src\ => qZoneCommentmaster\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

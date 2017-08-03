@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="170dp"
+    >
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="150dp"
+        android:layout_height="170dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/popwindow"
+        android:layout_alignBottom="@+id/share_image" />
+
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:id="@+id/share_location"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/share_location" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:text="分享位置"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/share_situation"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/share_location"
+        android:layout_below="@+id/share_location">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/share_situation" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageView9"
+            android:text="分享路况"
+            android:textSize="18sp"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_image"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/share_situation"
+        android:layout_alignStart="@+id/share_situation"
+        android:layout_alignEnd="@+id/share_situation">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/share_image" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享图片"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:textSize="18sp"
+            android:layout_toEndOf="@+id/imageView7" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/mytoolbar"
+        layout="@layout/mytoolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mytoolbar"
+        android:paddingBottom="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/title"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/left_head" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/circleImageView"
+            android:text="A馒头"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/circleImageView"
+            android:layout_alignStart="@+id/title"
+            android:text="5月31日 17:04"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/circleImageView"
+            android:layout_below="@+id/circleImageView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:text="Located two hours south of Sydney in the Southern Highland of New South Wales,..."
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:id="@+id/imagelistview"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/text"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/imageitem">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:id="@+id/commentlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rr1"
+        android:layout_margin="10dp"
+        tools:listitem="@layout/commentitem">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:weightSum="1">
+
+
+        <EditText
+            android:id="@+id/commenttext"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/commentshape"
+            android:hint=" 评论" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imagelistview"
+            android:layout_marginEnd="11dp"
+            android:layout_toStartOf="@+id/like"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:src="@drawable/commentshape"
+            android:text="发送"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imagelistview"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/count"
+            android:src="@drawable/like_unclick" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/imagelistview"
+            android:layout_marginEnd="15dp"
+            android:text="6"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
