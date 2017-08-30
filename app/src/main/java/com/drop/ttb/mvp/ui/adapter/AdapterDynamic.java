@@ -10,8 +10,6 @@ import com.jess.arms.base.DefaultAdapter;
 
 import java.util.List;
 
-import static com.amap.api.mapcore.util.ak.b;
-import static com.amap.api.mapcore.util.cz.B;
 
 /**
  * Created by Drop on 2017/7/28.

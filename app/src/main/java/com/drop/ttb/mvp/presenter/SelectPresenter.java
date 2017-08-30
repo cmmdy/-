@@ -26,14 +26,7 @@ import org.apache.commons.logging.Log;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.amap.api.mapcore.util.cz.A;
-import static com.amap.api.mapcore.util.cz.e;
-import static com.amap.api.mapcore.util.cz.s;
-import static com.amap.api.mapcore.util.cz.v;
-import static com.drop.ttb.R.id.imageView;
 import static com.drop.ttb.R.id.iv;
-import static com.drop.ttb.R.id.linearLayout;
 
 
 @ActivityScope

@@ -16,9 +16,6 @@ import com.jess.arms.widget.imageloader.ImageLoader;
 
 import butterknife.BindView;
 
-import static android.R.attr.data;
-import static com.amap.api.mapcore.util.cz.i;
-import static com.amap.api.mapcore.util.cz.m;
 
 /**
  * Created by Drop on 2017/7/26.

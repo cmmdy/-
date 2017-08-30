@@ -37,8 +37,6 @@ import com.drop.ttb.mvp.contract.TipsContract;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.amap.api.mapcore.util.cz.G;
-import static com.amap.api.mapcore.util.cz.P;
 
 
 @ActivityScope

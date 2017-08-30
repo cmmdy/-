@@ -27,9 +27,6 @@ import java.util.List;
 import butterknife.BindView;
 import de.hdodenhof.circleimageview.CircleImageView;
 
-import static com.amap.api.mapcore.util.cz.G;
-import static com.amap.api.mapcore.util.cz.e;
-import static com.amap.api.mapcore.util.cz.m;
 
 /**
  * Created by Drop on 2017/7/28.
